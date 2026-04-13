@@ -1,0 +1,288 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: #242424;
+    font-family: sans-serif;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: arial;
+    font-weight: 900;
+    color: #000;
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+main {
+    display: block;
+    background-color: #fff;
+}
+
+.container {
+    width: 70% !important;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding: 0 20px;
+}
+
+section.module p {
+    font-family: arial;
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 40px;
+    text-shadow: 0 13.36px 8.896px #000000, 0 -2px 1px #000000;
+    color: #262626;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+    text-shadow: 3px 3px 30px rgba(0, 0, 0, 0.303);
+}
+
+section.module:last-child {
+    margin-bottom: 0;
+}
+
+section.module h2 {
+    margin-bottom: 40px;
+    font-size: 32px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+section.module.content {
+    padding: 40px 0;
+    background-color: #ece7d5;
+}
+
+section.module.parallax {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 100vh !important;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-repeat: no repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+}
+
+section.module.parallax-2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh !important;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-repeat: no repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+}
+
+section.module.parallax-3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh !important;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-repeat: no repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+}
+
+section.module.parallax:after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 8;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 40%, #000 110%);
+}
+
+section.module.parallax-1 {
+    background-image: url(images/redentor.jpg);
+}
+
+section.module.parallax-2 {
+    background-image: url(images/flag.jpg);
+}
+
+section.module.parallax-3 {
+    background-image: url(images/amazonia.jpg);
+}
+
+section.module.parallax h1 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 78px;
+    z-index: 50;
+    text-transform: uppercase;
+    text-shadow:
+        0 -1px 0 #000000,
+        1px 1px 0 #000000,
+        2px 2px 0 #000000,
+        3px 3px 0 #000000,
+        4px 4px 0 #000000,
+        5px 5px 0 #000000,
+        6px 6px 0 #000000,
+        7px 7px 0 #000000,
+        8px 8px 0 #000000,
+        22px 22px 30px rgba(0, 0, 0, 0.9);
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    background: transparent linear-gradient(to top, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 20%, #000 110%);
+    ;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+nav a {
+    font-family: arial;
+    font-weight: 900;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    position: relative;
+    color: #ffffff;
+    text-shadow:
+        0 -1px 0 #000000,
+        1px 1px 1px #000000,
+        2px 2px 2px #000000,
+        3px 3px 3px #000000,
+        4px 4px 4px #000000,
+        5px 5px 5px #000000,
+        22px 22px 30px rgba(0, 0, 0, 0.9);
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    width: max-content;
+    border-radius: 25px;
+    display: block;
+    margin: 0 auto;
+    transition: transform 0.4s ease, color 0.4s ease, backdrop-filter 0.8s ease;
+    backdrop-filter: blur(0px);
+    padding: 10px 20px;
+    z-index: 500;
+}
+
+nav a:after {
+    content: "";
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    height: 1px;
+    border-radius: 50px;
+    width: 0;
+    left: 0%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    transition: 0.4s ease;
+    bottom: 0px;
+    backdrop-filter: blur(0px);
+}
+
+nav a:before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0%;
+    width: 0%;
+    height: 1px;
+    border-radius: 50px;
+    background-color: rgb(255, 255, 255);
+    transition: 0.4s ease;
+    bottom: 0px;
+}
+
+nav a:hover {
+    transform: scale(1.1);
+}
+
+nav a:hover:before {
+    width: 100%;
+}
+
+nav a:hover:after {
+    width: 100%;
+}
+
+a.logo-link {
+    position: fixed;
+    bottom: 2%;
+    left: 2%;
+    z-index: 9999;
+    text-decoration: none;
+}
+
+.logo {
+    width: 160px;
+    height: auto;
+    filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.7));
+    transition: all 0.4s ease;
+}
+
+.logo:hover {
+    transform: scale(1.2);
+    filter: drop-shadow(3px 6px 10px rgba(0, 0, 0, 0.9));
+}
+.footer {
+    background-color: #1a1a1a;
+    color: #f1f1f1;
+    padding: 40px 0;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+.footer p {
+    margin: 5px 0;
+    font-size: 24px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.footer strong {
+    color: #fedd00;
+    text-transform: uppercase;
+    scale: 0.8;
+    transition: all 0.4s ease, all 0.4s ease;
+    display: inline-block;
+    font-size: 1rem;
+    
+}
+
+.footer strong:hover {
+    transform: scale(1.2);
+    text-shadow: 0 0 10px rgba(254, 221, 0, 0.5);
+    margin: 0 15px;
+    cursor: default;
+    font-size: 1.4rem;
+}
