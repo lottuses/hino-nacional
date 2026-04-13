@@ -11,7 +11,7 @@ destaques.forEach(palavra => {
         }
     });
     palavra.addEventListener('mousemove', (e) => {
-        // Mantém ele seguindo o mouse
+
         popup.style.left = e.clientX + 'px';
         popup.style.top = e.clientY + 'px';
     });
@@ -30,9 +30,9 @@ const btnFechar = document.getElementById('fechar-modal');
 // Seleciona todos os botões "Read More"
 document.querySelectorAll('.btn-mais').forEach(botao => {
     botao.addEventListener('click', () => {
-        // Pega o título do H1 que está no mesmo card do botão
+
         const tituloCard = botao.parentElement.querySelector('h1').innerText;
-        // Pega o texto detalhado que está no atributo data-info
+
         const detalhe = botao.getAttribute('data-info');
 
         modalTitulo.innerText = tituloCard;

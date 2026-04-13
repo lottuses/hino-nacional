@@ -9,6 +9,7 @@ body {
     width: 100%;
     margin: 0 auto;
 }
+
 main {
     display: block;
     background-image: url(images/brazilflag.jpg);
@@ -17,19 +18,22 @@ main {
     background-attachment: fixed;
     background-size: cover;
 }
-section.module.content{
+
+section.module.content {
     gap: 10px;
     display: flex;
     justify-content: center;
     margin-top: 5%;
     width: 70%;
     margin-left: 15%;
-    margin-right: 15%; 
+    margin-right: 15%;
     padding-bottom: 15%;
 }
-.container, .container1{
 
-    width: 100%; 
+.container,
+.container1 {
+
+    width: 100%;
     margin: 0;
     box-sizing: border-box;
     padding: 20px;
@@ -38,20 +42,25 @@ section.module.content{
     backdrop-filter: blur(5px);
     box-shadow: 0 8px 30px 0 rgba(0, 0, 0, 0.744);
 }
-.container p, .container1 p{
+
+.container p,
+.container1 p {
     font-size: 22px;
     color: #ffffff;
     text-shadow: 0px 0px 15px #00ff84;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-h2{
+
+h2 {
     text-align: center;
     font-size: 62px;
 }
-p{
+
+p {
     text-align: left;
     font-size: 36px;
 }
+
 .destaque {
     font-style: oblique;
     color: #f5ffc6;
@@ -60,17 +69,19 @@ p{
     border-bottom: 3px solid transparent;
     border-radius: 8px;
 }
+
 .destaque:hover {
     color: #f5ffc6;
     text-shadow: 0 0 5px #f5ffc6;
     border-bottom: 3px solid #f5ffc6;
-    cursor:pointer;
+    cursor: pointer;
 }
+
 #popup-hino {
     position: fixed;
     opacity: 0;
     visibility: hidden;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
         url(images/flag-brazil.jpg);
     background-position: 100% 50%;
     background-repeat: no repeat;
@@ -86,20 +97,23 @@ p{
     pointer-events: none;
     max-width: 250px;
     transform: translate(-50%, -100%) scale(0.8);
-    transition: 
-        opacity 0.3s ease 0.1s, 
+    transition:
+        opacity 0.3s ease 0.1s,
         transform 0.3s ease,
         visibility 0.3s;
 }
+
 #popup-hino.ativo {
     opacity: 1;
     visibility: visible;
-    transform: translate(-50%, -100%) scale(1); 
+    transform: translate(-50%, -100%) scale(1);
 }
+
 nav {
     display: flex;
     flex-direction: row;
-    background: transparent linear-gradient(to top, rgba(0,0,0,0) 0, rgba(0,0,0,0) 20%, #000 110%);;
+    background: transparent linear-gradient(to top, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 20%, #000 110%);
+    ;
     position: relative;
     top: 0;
     left: 0;
@@ -110,7 +124,8 @@ nav {
     align-items: center;
     z-index: 1000;
 }
-nav a{
+
+nav a {
     font-family: arial;
     font-weight: 900;
     position: relative;
@@ -120,25 +135,26 @@ nav a{
     text-transform: uppercase;
     position: relative;
     color: #ffffff;
-    text-shadow: 
-      0 -1px 0 #000000, 
-      1px 1px 1px #000000, 
-      2px 2px 2px #000000, 
-      3px 3px 3px #000000, 
-      4px 4px 4px #000000, 
-      5px 5px 5px #000000, 
-      22px 22px 30px rgba(0, 0, 0, 0.9);
+    text-shadow:
+        0 -1px 0 #000000,
+        1px 1px 1px #000000,
+        2px 2px 2px #000000,
+        3px 3px 3px #000000,
+        4px 4px 4px #000000,
+        5px 5px 5px #000000,
+        22px 22px 30px rgba(0, 0, 0, 0.9);
     font-size: 18px;
     letter-spacing: 0.5px;
     width: max-content;
     border-radius: 25px;
     display: block;
     margin: 0 auto;
-    transition: transform 0.4s ease, color  0.4s ease, backdrop-filter 0.8s ease;
+    transition: transform 0.4s ease, color 0.4s ease, backdrop-filter 0.8s ease;
     backdrop-filter: blur(0px);
     padding: 10px 20px;
     z-index: 500;
 }
+
 nav a:after {
     content: "";
     position: absolute;
@@ -148,11 +164,12 @@ nav a:after {
     width: 0;
     left: 0%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
-    transition:  0.4s ease;
+    transition: 0.4s ease;
     bottom: 0px;
     backdrop-filter: blur(0px);
 }
-nav a:before{
+
+nav a:before {
     content: "";
     position: absolute;
     top: 0px;
@@ -161,16 +178,19 @@ nav a:before{
     height: 1px;
     border-radius: 50px;
     background-color: rgb(255, 255, 255);
-    transition:  0.4s ease;
+    transition: 0.4s ease;
     bottom: 0px;
 }
+
 nav a:hover {
     transform: scale(1.1);
     backdrop-filter: blur(10px);
 }
+
 nav a:hover:before {
     width: 100%;
 }
+
 nav a:hover:after {
     width: 100%;
 }
@@ -217,7 +237,7 @@ a.logo-link {
     transition: all 0.4s ease, all 0.4s ease;
     display: inline-block;
     font-size: 1rem;
-    
+
 }
 
 .footer strong:hover {

@@ -154,7 +154,6 @@ nav {
     display: flex;
     flex-direction: row;
     background: transparent linear-gradient(to top, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 20%, #000 110%);
-    ;
     position: relative;
     top: 0;
     left: 0;
@@ -254,6 +253,7 @@ a.logo-link {
     transform: scale(1.2);
     filter: drop-shadow(3px 6px 10px rgba(0, 0, 0, 0.9));
 }
+
 .footer {
     background-color: #1a1a1a;
     color: #f1f1f1;
@@ -276,7 +276,7 @@ a.logo-link {
     transition: all 0.4s ease, all 0.4s ease;
     display: inline-block;
     font-size: 1rem;
-    
+
 }
 
 .footer strong:hover {
