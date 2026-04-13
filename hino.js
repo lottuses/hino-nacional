@@ -27,7 +27,6 @@ const modalTitulo = document.getElementById('modal-titulo');
 const modalTexto = document.getElementById('modal-texto');
 const btnFechar = document.getElementById('fechar-modal');
 
-// Seleciona todos os botões "Read More"
 document.querySelectorAll('.btn-mais').forEach(botao => {
     botao.addEventListener('click', () => {
 
